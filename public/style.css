@@ -1,0 +1,41 @@
+/* Reset margin and padding for all elements */
+•⁠  ⁠{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  /* Wrapper for iframe to keep aspect ratio */
+  .iframe-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* You can adjust max width to your preference */
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (height / width * 100) */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  /* Styling for iframe */
+  .iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
